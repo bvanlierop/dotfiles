@@ -33,15 +33,19 @@ call plug#begin('~/.vim/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-
-    "  I AM SO SORRY FOR DOING COLOR SCHEMES IN MY VIMRC, BUT I HAVE
-    "  TOOOOOOOOOOOOO
     Plug 'gruvbox-community/gruvbox'
     Plug 'sainnhe/gruvbox-material'
     Plug 'phanviet/vim-monokai-pro'
     Plug 'vim-airline/vim-airline'
     Plug 'flazz/vim-colorschemes'
     Plug '/home/mpaulson/personal/vim-be-good'
+    
+    " Install plugins via:
+    " Follow instructions (curl download) of GitHub repo vim-plug (Minimalist Vim Plugin Manager)
+    " Then reload this rc in vim:
+    "    :source %
+    " Then call plugin installer function via:
+    "    :PlugInstall
 call plug#end()
 
 colorscheme gruvbox
