@@ -38,7 +38,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'phanviet/vim-monokai-pro'
     Plug 'vim-airline/vim-airline'
     Plug 'flazz/vim-colorschemes'
-    Plug '/home/mpaulson/personal/vim-be-good'
     
     " Install plugins via:
     " Follow instructions (curl download) of GitHub repo vim-plug (Minimalist Vim Plugin Manager)
