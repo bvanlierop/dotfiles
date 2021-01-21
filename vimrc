@@ -24,7 +24,7 @@ set shortmess+=c
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/vimfiles/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tweekmonster/gofmt.vim'
     Plug 'tpope/vim-fugitive'
