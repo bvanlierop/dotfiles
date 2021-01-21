@@ -1,3 +1,5 @@
+let g:coc_disable_startup_warning = 1
+
 " Credits to ThePrimeagen for most of the content
 syntax on
 
@@ -25,7 +27,8 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/vimfiles/plugged')
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'morhetz/gruvbox'
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tweekmonster/gofmt.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'vim-utils/vim-man'
@@ -47,7 +50,7 @@ call plug#begin('~/vimfiles/plugged')
     "    :PlugInstall
 call plug#end()
 
-colorscheme gruvbox
+" colorscheme gruvbox
 set background=dark
 
 if(executable('rg'))
