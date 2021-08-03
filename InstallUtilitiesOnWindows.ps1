@@ -6,6 +6,6 @@ Add-Content -Path $profile -value "Import-Module -Name Terminal-Icons"
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 choco install poshgit --y
 choco install oh-my-posh --y
-Add-Content -Path $profile -value "Set-PoshPrompt -Theme Paradox"
-choco install cascadiafonts --y
-
+Add-Content -Path $profile -value "Set-PoshPrompt -Theme marcduiker"
+choco install font-nerd-dejavusansmono
+Write-Host "Now open Windows terminal settings and add "fontface": "DejaVuSansMono NF" under "profiles"
