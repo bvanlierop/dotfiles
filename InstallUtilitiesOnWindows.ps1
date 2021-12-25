@@ -1,3 +1,4 @@
+choco install fd --y
 choco install vim --y
 choco install microsoft-windows-terminal --y
 Install-PackageProvider -Name NuGet -Force
