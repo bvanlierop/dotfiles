@@ -41,6 +41,7 @@ call plug#begin('~/vimfiles/plugged')
     Plug 'phanviet/vim-monokai-pro'
     Plug 'vim-airline/vim-airline'
     Plug 'flazz/vim-colorschemes'
+    Plug 'OmniSharp/omnisharp-vim'
     
     " Install plugins via:
     " Follow instructions (curl download) of GitHub repo vim-plug (Minimalist Vim Plugin Manager)
@@ -48,6 +49,8 @@ call plug#begin('~/vimfiles/plugged')
     "    :source %
     " Then call plugin installer function via:
     "    :PlugInstall
+    " Install OmniSharp Server via:
+    "    :OmniSharpInstall
 call plug#end()
 
 " colorscheme gruvbox
