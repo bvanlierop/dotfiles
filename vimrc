@@ -27,7 +27,6 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/vimfiles/plugged')
-    Plug 'morhetz/gruvbox'
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tweekmonster/gofmt.vim'
     Plug 'tpope/vim-fugitive'
@@ -36,11 +35,9 @@ call plug#begin('~/vimfiles/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'gruvbox-community/gruvbox'
-    Plug 'sainnhe/gruvbox-material'
-    Plug 'phanviet/vim-monokai-pro'
     Plug 'vim-airline/vim-airline'
     Plug 'flazz/vim-colorschemes'
+    Plug 'savq/melange'
     Plug 'OmniSharp/omnisharp-vim'
     
     " Install plugins via:
@@ -53,8 +50,10 @@ call plug#begin('~/vimfiles/plugged')
     "    :OmniSharpInstall
 call plug#end()
 
-" colorscheme gruvbox
-set background=dark
+" Enable full colors in terminal
+set termguicolors
+" Enable warm color scheme provided by savq/melange plugin
+colorscheme melange 
 
 if(executable('rg'))
     let g:rg_derive_root='true'
